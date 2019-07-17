@@ -1,0 +1,25 @@
+<br><br><br><br><br>
+<div class="row">
+
+  <div class="col-12">
+    <div class="container text-center">
+      <form>
+        <h3 class="fonts">Login</h3><br>
+        <!--LogIn-->
+        <div class="form-group">
+          <label for="txtEmail">
+            <input type="email" class="form-control" formControlname="emails" #emails placeholder="Enter Email..">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="txtPassword">
+            <input class="input-group text-center" type="password" class="form-control" formControlname="password" #passwords
+              placeholder="Enter Password..">
+          </label>
+        </div>
+        <br><br>
+        <button type="submit" (click)="logIn(emails.value, passwords.value)" class="btn btn-primary">Log In</button>
+      </form>
+      <div *ngIf="fail">Your credentials are wrong </div>
+    </div>
+  </div>

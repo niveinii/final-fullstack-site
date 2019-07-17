@@ -1,0 +1,38 @@
+.vl {
+    border-left: 1px solid green;
+    height: 500px;
+  }
+
+  
+input {
+  border-top: 0px solid;
+  border-right: 0px solid;
+  border-left: 0px solid;
+  height: 20px;
+  width: 300px;
+  color: #CCC;
+  padding:25px;
+  margin:10px;
+}
+
+.fonts {
+  font-family: 'Inconsolata', monospace;
+  font-size:50px;
+}
+input:focus{
+  width:340px;
+  outline:none;
+  outline:0;
+  transition: width .2s ease-in-out;
+  
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid;
+}
